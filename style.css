@@ -1,0 +1,150 @@
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk",sans-serif;
+    font-size: 18px;
+    background-color: var(--pale-blue);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 350px;
+}
+
+.main-container {
+    position: relative;
+    background-image: linear-gradient(hsla(252, 100%, 67%), hsla(241, 81%, 54%));
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+    justify-items: center;
+    z-index: 100%;
+}
+
+.main-container h3 {
+    color: var(--light-lavender);
+    margin-bottom: 30px;
+}
+.main-container h2 {
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.main-container p {
+    color: var(--light-lavender);
+    margin-bottom: 30px;
+    line-height: 25px;
+    width: 100%;
+}
+.percentage {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.percentage p {
+    text-align: center;
+    padding: 40px;
+    justify-content: space-between;
+    color: var(--light-lavender);
+}
+
+.percentage p span {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+
+.analysis {
+    width: 300px;
+    background-color: var(--white);
+    padding: 35px;
+    margin-left: -10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.analysis h3 {
+    color: var(--dark-gray-blue);
+    margin-bottom: 30px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 700;
+}
+.value {
+    color: gray;
+    font-weight: 500;
+}
+.value span {
+    color: var(--dark-gray-blue);
+}
+
+.reaction {
+    color: var(--light-red);
+    background-color: rgb(254, 247, 247);
+    
+}
+.memory {
+    color: var(--orangey-yellow);
+    background-color: rgb(252, 252, 235);
+}
+.verbal {
+    color: var(--green-teal);
+    background-color: rgb(239, 254, 239);
+}
+.visual {
+    color: var(--cobalt-blue);
+    background-color: rgb(236, 248, 253);
+}
+button {
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    width: 100%;
+    margin-top: 35px;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover {
+    background-image: linear-gradient(hsla(252, 100%, 67%), hsla(241, 81%, 54%));
+}
